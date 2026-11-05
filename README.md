@@ -9,19 +9,20 @@ A C++ console program that emulates how a school Guidance Counseling Office sche
 | Item | Details |
 |---|---|
 | Course | CPE 010 - Data Structures and Algorithms |
-| Section / Group | [e.g., CPE21S3 / Group 2] |
-| Instructor | [Prof. Full Name] |
-| School / Department | [University Name, Department] |
-| Date Submitted | [Month Day, Year] |
+| Section / Group | CPE 010 - CPE21S4 |
+| Instructor | Engr. Jimlord M. Quejado  |
+| School / Department | Technological Institute of the Philippines - Quezon City (Computer Engineering Department |
+| Date Submitted | November 6, 2026 |
 
 ## Team Members
 
 | # | Full Name (Surname, First Name M.I.) | Student No. | Role | Main Contributions |
 |---|---|---|---|---|
-| 1 | [Surname, First Name M.I.] | [00-0000] | Project Leader | [Scheduler core, repository setup] |
-| 2 | [Surname, First Name M.I.] | [00-0000] | [Role] | [Waitlist queue, flowcharts] |
-| 3 | [Surname, First Name M.I.] | [00-0000] | [Role] | [Benchmark code, Section 5] |
-| 4 | [Surname, First Name M.I.] | [00-0000] | [Role] | [Documentation, testing] |
+| 1 | Cardenas, Lea Marie N. | 2420071 | Assistant Leader | Project Idea, Brainstorming |
+| 2 | De Vera, Sophia D. | 2410229 | Project Leader | Project Idea, Brainstorming |
+| 3 | Hare, Andrei Angelo D. | 2012261 | QA | [Documentation, Github Repository Editor, Testing |
+| 4 | Pangyarihan, Jenny Rose | 2420070 | Assistant Code Developer | Documentation, Objectives, Coder  |
+| 5 | Peñaflorida, Wrio Carlo | 1512182 | Code Developer | Programming, Main Coding File Creator, Github Repository |
 
 ## Table of Contents
 1. [Overview](#overview)
