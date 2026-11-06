@@ -35,7 +35,7 @@ A quick overview of the project, the system can accommodate counseling sessions 
 6. [Sample Run](#sample-run)
 7. [Project Structure](#project-structure)
 8. [Source Code](#source-code)
-9. [How to Upload Files](#how-to-upload-files)
+9. [How to Upload Files](#how-to-upload-files-to-this-repository)
 10. [Limitations](#limitations)
 11. [Future Improvements](#future-improvements)
 12. [AI Use Disclosure](#ai-use-disclosure)
@@ -390,38 +390,62 @@ int main() {
 
     std::cout << "+----------+--------------+--------------+\n";
 }
-## How to Upload Files
+```
 
-You can add or update project files through GitHub:
+</details>
 
-1. Open the CounselConnect repository and sign in to GitHub.
-2. Select **Add file**, then choose **Upload files**.
-3. Drag the files into the upload area, or select **choose your files**.
-4. Review the changed file list. Keep source files in `src/` and documentation or screenshots in `docs/`.
-5. Enter a short commit message describing the upload.
-6. Select **Commit changes** to save the files to the repository.
+## How to Upload Files to This Repository
 
-To update an existing file, upload a file with the same path and name, then commit the change. Check the repository page after committing to confirm the files and commit appear.
+**Option A: GitHub website (no Git needed)**
+1. Open the repository page on GitHub.
+2. Click **Add file** > **Upload files**.
+3. Drag and drop your files or folders (for example `src/`, `docs/`) into the page.
+4. Write a short commit message, such as `Add source files`.
+5. Click **Commit changes**.
+
+**Option B: Git command line**
+```bash
+git add .
+git commit -m "Add source files and documentation"
+git push origin main
+```
+
+**Tips**
+- Keep the folder layout shown in [Project Structure](#project-structure) so the paths in this README stay correct.
+- Put flowcharts and screenshots inside the `docs/` folder.
+- To edit this README, open it on GitHub and click the pencil icon, then commit the change.
 
 ## Limitations
 
-- The application is a console program; it does not provide a graphical interface or online booking portal.
-- Appointment and waitlist data are kept in memory and are lost when the program exits.
-- The program does not save data to a database or load existing appointments from a file.
-- The waitlist is FIFO and retries each request after a cancellation; it does not guarantee that every waiting request can be scheduled.
-- Dates are entered as integers in `YYYYMMDD` format, and the program does not validate whether a date is a real calendar date.
-- The current implementation is intended for a single running instance and does not support simultaneous users.
+- Appointments live in memory only. Closing the program erases all bookings and the waitlist.
+- The system handles a single counselor and a single schedule. It cannot assign sessions across several counselors.
+- The student view and counselor view are not separated by login. Privacy mode exists in `showDay`, but the console menu currently shows the counselor view.
+- Dates are plain `YYYYMMDD` integers and are not checked for real calendar validity (for example, 20261345 is accepted).
+- Cancelling an appointment asks for its ID only and does not verify who is cancelling.
+- Waitlist requests are retried only when an appointment is cancelled, and a request for a past date is never removed automatically.
+- Cancelling searches all days linearly, so it slows down as the number of appointments grows (O(n)).
+- Console only. There is no graphical interface.
 
 ## Future Improvements
 
-- Add persistent storage so appointments and waitlist entries remain available after the program closes.
-- Validate calendar dates and improve date and time input handling.
-- Add a graphical or web-based interface for students and counselors.
-- Add user roles and authentication, with privacy controls for student information.
-- Provide appointment search, reporting, and export features.
-- Expand automated tests for booking, cancellation, conflicts, waitlist promotion, and invalid input.
+- Save and load appointments using a file or a database so data survives restarts.
+- Add separate student and counselor logins, with the privacy view for students.
+- Support multiple counselors and let students pick one.
+- Validate real calendar dates and block bookings in the past or on weekends and holidays.
+- Replace the day lookup with a hash map or ordered map to speed up booking and cancelling.
+- Send email or SMS reminders and confirmations.
+- Add rescheduling, so students can move a session without cancelling it.
+- Build a GUI or web front end.
 
 ## AI Use Disclosure
 
-AI assistance was used during preparation of project documentation and presentation materials, including README wording and explanations of the measured timing charts. The project source code and its behavior should be reviewed and verified by the team.
+> **Note to the team:** edit this section so it accurately describes how AI tools were used in this project.
 
+AI tools were used as a support aid during this project. All final decisions, testing, and submitted work were reviewed by the team members.
+
+| Tool | Used for |
+|---|---|
+| Claude (Anthropic) | Formatting the README, such as the table of contents links and section layout |
+| [Add other tools, if any] | [Describe how they were used] |
+
+The team members understand the submitted code and documentation and can explain them.
