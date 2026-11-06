@@ -446,6 +446,6 @@ AI tools were used as a support aid during this project. All final decisions, te
 | Tool | Used for |
 |---|---|
 | Claude (Anthropic) | Formatting the README, such as the table of contents links and section layout |
-| [Add other tools, if any] | [Describe how they were used] |
+| Chatgpt | Understanding and explaining errors we encountered  |
 
 The team members understand the submitted code and documentation and can explain them.
