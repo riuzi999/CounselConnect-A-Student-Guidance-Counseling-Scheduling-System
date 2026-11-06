@@ -23,7 +23,7 @@ A quick overview of the project, the system can accommodate counseling sessions 
 | 1 | Cardenas, Lea Marie N. | 2420071 | Assistant Leader | Documentation, Core Scheduling Logic, Project Idea |
 | 2 | De Vera, Sophia D. | 2410229 | Project Leader | System Architecture, Project Idea, Documentation |
 | 3 | Hare, Andrei Angelo D. | 2012261 | QA | Program Testing, Repo Editor, Validator for both Documentation and Repo |
-| 4 | Pangyarihan, Jenny Rose | 2420070 | Assistant Code Developer | Console UI, System input validation |
+| 4 | Pangyarihan, Jenny Rose D.| 2420070 | Assistant Code Developer | Console UI, System input validation |
 | 5 | Peñaflorida, Wrio Carlo | 1512182 | Code Developer | System Design, Repo Setup, Main Coder, Flowchart |
 
 ## Table of Contents
