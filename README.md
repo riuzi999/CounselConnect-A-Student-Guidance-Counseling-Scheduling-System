@@ -35,7 +35,7 @@ A quick overview of the project, the system can accommodate counseling sessions 
 6. [Sample Run](#sample-run)
 7. [Project Structure](#project-structure)
 8. [Source Code](#source-code)
-9. [How to Upload Files](#how-to-upload-files-to-this-repository)
+9. [How to Upload Files](#how-to-upload-files)
 10. [Limitations](#limitations)
 11. [Future Improvements](#future-improvements)
 12. [AI Use Disclosure](#ai-use-disclosure)
@@ -390,3 +390,38 @@ int main() {
 
     std::cout << "+----------+--------------+--------------+\n";
 }
+## How to Upload Files
+
+You can add or update project files through GitHub:
+
+1. Open the CounselConnect repository and sign in to GitHub.
+2. Select **Add file**, then choose **Upload files**.
+3. Drag the files into the upload area, or select **choose your files**.
+4. Review the changed file list. Keep source files in `src/` and documentation or screenshots in `docs/`.
+5. Enter a short commit message describing the upload.
+6. Select **Commit changes** to save the files to the repository.
+
+To update an existing file, upload a file with the same path and name, then commit the change. Check the repository page after committing to confirm the files and commit appear.
+
+## Limitations
+
+- The application is a console program; it does not provide a graphical interface or online booking portal.
+- Appointment and waitlist data are kept in memory and are lost when the program exits.
+- The program does not save data to a database or load existing appointments from a file.
+- The waitlist is FIFO and retries each request after a cancellation; it does not guarantee that every waiting request can be scheduled.
+- Dates are entered as integers in `YYYYMMDD` format, and the program does not validate whether a date is a real calendar date.
+- The current implementation is intended for a single running instance and does not support simultaneous users.
+
+## Future Improvements
+
+- Add persistent storage so appointments and waitlist entries remain available after the program closes.
+- Validate calendar dates and improve date and time input handling.
+- Add a graphical or web-based interface for students and counselors.
+- Add user roles and authentication, with privacy controls for student information.
+- Provide appointment search, reporting, and export features.
+- Expand automated tests for booking, cancellation, conflicts, waitlist promotion, and invalid input.
+
+## AI Use Disclosure
+
+AI assistance was used during preparation of project documentation and presentation materials, including README wording and explanations of the measured timing charts. The project source code and its behavior should be reviewed and verified by the team.
+
