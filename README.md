@@ -1,4 +1,4 @@
-# CounselConnect: A Student Guidance Counseling Scheduling System
+# CounselConnect: A  Guidance Counseling Scheduling System
 
 The system, CounselConnect: A Student Guidance Counseling Scheduling System is a C++ console program that emulates how a school guidance counseling office, like the Guidance Counseling Center (GCC) of TIPQC schedules student appointments, built as the Final Project for **CPE 010 - Data Structures and Algorithms**.
 
