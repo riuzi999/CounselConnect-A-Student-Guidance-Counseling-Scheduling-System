@@ -1,6 +1,8 @@
 # CounselConnect: A Student Guidance Counseling Scheduling System
 
-A C++ console program that emulates how a school Guidance Counseling Office schedules student appointments, built as the Final Project for **CPE 010 - Data Structures and Algorithms**.
+The system, CounselConnect: A Student Guidance Counseling Scheduling System is a C++ console program that emulates how a school guidance counseling office, like the Guidance Counseling Center (GCC) of TIPQC schedules student appointments, built as the Final Project for **CPE 010 - Data Structures and Algorithms**.
+
+A quick overview of the project, the system can accommodate counseling sessions lasting 30 to 120 minutes, within the GCC's operating hours. Appointments are organized chronologically, and overlapping schedules are prevented through a conflict detection mechanism.
 
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-blue) ![Platform](https://img.shields.io/badge/app-console-lightgrey) ![Course](https://img.shields.io/badge/course-CPE%20010-green)
 
@@ -45,14 +47,22 @@ Students book guidance counseling sessions of 30 to 120 minutes (in 30-minute st
 **Overlap rule:** two appointments conflict when `NewStart < ExistingEnd AND NewEnd > ExistingStart`. Back-to-back sessions (for example 11:00-12:00 then 12:00-1:00) are allowed.
 
 ## Features
-
+**Appointment Management**
 - Book an appointment with date, start time, and duration
+- Cancel an appointment by ID
+- View the daily appointment schedule, on the Counsellor's side.
+
+**Scheduling and Validation**
+- Tracks whether the appointment scheduled by the student is with the office hours.
 - Validation of duration, 30-minute grid, and office hours
 - Conflict detection against neighboring appointments
 - Waitlist with automatic promotion on cancellation
-- Cancel an appointment by ID
 - View a day's schedule (student view shows only "Booked" to protect privacy)
 - Invalid input handling (non-numeric input, bad menu choice, out-of-range times)
+
+**Waitlist Management**
+- Add conflicting appointment requests to a FIFO waitlist, if conflicts arises.
+- Automatically puts the schedule request to waiting requests when an appointment is cancelled.
 
 ## Data Structures and Algorithms
 
