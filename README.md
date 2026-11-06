@@ -35,10 +35,8 @@ A quick overview of the project, the system can accommodate counseling sessions 
 6. [Sample Run](#sample-run)
 7. [Project Structure](#project-structure)
 8. [Source Code](#source-code)
-9. [How to Upload Files](#how-to-upload-files)
-10. [Limitations](#limitations)
-11. [Future Improvements](#future-improvements)
-12. [AI Use Disclosure](#ai-use-disclosure)
+9. [Limitations](#limitations)
+10. [Future Improvements](#future-improvements)
 
 ## Overview
 
@@ -390,18 +388,7 @@ int main() {
 
     std::cout << "+----------+--------------+--------------+\n";
 }
-## How to Upload Files
-
-You can add or update project files through GitHub:
-
-1. Open the CounselConnect repository and sign in to GitHub.
-2. Select **Add file**, then choose **Upload files**.
-3. Drag the files into the upload area, or select **choose your files**.
-4. Review the changed file list. Keep source files in `src/` and documentation or screenshots in `docs/`.
-5. Enter a short commit message describing the upload.
-6. Select **Commit changes** to save the files to the repository.
-
-To update an existing file, upload a file with the same path and name, then commit the change. Check the repository page after committing to confirm the files and commit appear.
+```
 
 ## Limitations
 
@@ -420,8 +407,4 @@ To update an existing file, upload a file with the same path and name, then comm
 - Add user roles and authentication, with privacy controls for student information.
 - Provide appointment search, reporting, and export features.
 - Expand automated tests for booking, cancellation, conflicts, waitlist promotion, and invalid input.
-
-## AI Use Disclosure
-
-AI assistance was used during preparation of project documentation and presentation materials, including README wording and explanations of the measured timing charts. The project source code and its behavior should be reviewed and verified by the team.
 
