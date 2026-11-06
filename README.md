@@ -26,7 +26,7 @@ A quick overview of the project, the system can accommodate counseling sessions 
 | 4 | Pangyarihan, Jenny Rose | 2420070 | Assistant Code Developer | Console UI, System input validation |
 | 5 | Peñaflorida, Wrio Carlo | 1512182 | Code Developer | System Design, Repo Setup, Main Coder, Flowchart |
 
-## Table of 
+## Table of Contents
 1. [Overview](#overview)
 2. [Features](#features)
 3. [Data Structures and Algorithms](#data-structures-and-algorithms)
